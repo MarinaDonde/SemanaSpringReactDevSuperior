@@ -1,16 +1,14 @@
 import MovieScore from "components/movieScore";
 import { Link } from "react-router-dom";
+import { Movie } from 'types/movie';
+
+type Props = {
+    movie: Movie;
+}
+
+export default function MovieCard( { movie } : Props ) {
 
 
-export default function MovieCard() {
-
-    const movie = {
-        id: 1,
-        image: "https://i.imgur.com/mCEUMvZ.jpg",
-        title: "Marley & Eu",
-        count: 2,
-        score: 4.5
-    };
 
     return (
         <div>
