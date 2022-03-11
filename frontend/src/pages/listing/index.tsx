@@ -17,7 +17,7 @@ export default function Listing() {
         last: true,
         totalPages: 0,
         totalElements: 0,
-        size: 12,
+        size: 8,
         number: 0,
         first: true,
         numberOfElements: 0,
@@ -25,7 +25,7 @@ export default function Listing() {
     });
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=id`)
+        axios.get(`${BASE_URL}/movies?size=8&page=${pageNumber}&sort=id`)
             .then(response => {
                 const data = response.data as MoviePage;
                 setPage(data);
