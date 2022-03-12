@@ -6,7 +6,7 @@ export default function Navbar() {
       <header>
         <nav className="container">
           <div className="dsmovie-nav-content">
-            <h1><a href="/">DogMoviee</a> </h1>
+            <h1><a href="/">DogMovie</a> </h1>
             <a href="https://github.com/MarinaDonde" target="_blank" rel="noopener noreferrer">
               <div className="dsmovie-contact-container">
                 <GithubIcon />
